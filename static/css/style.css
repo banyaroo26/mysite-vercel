@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.profile {
+    width: 250px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .profile {
+        width: 250px;
+        height: auto;
+    }
+}
+
+.education {
+    background-color: rgba(52, 58, 64, 0.05);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.education > img {
+    width: 100px;
+    height: auto;
+}
+
+.fs-institution {
+    font-size: 20px;
+}
+
+.fs-degree {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .education > img {
+        width: 75px;
+        height: auto;
+    }
+
+    .fs-institution {
+        font-size: 16px;
+    }
+
+    .fs-degree {
+        font-size: 12px;
+    }
+}
+
+.the-image-container {
+    width: 100%;
+    max-width: 320px;
+    background-color: #FCFFF9;
+    transition-duration: 0.4s;
+}
+
+.the-image-container:hover {
+    background-color: #E0E0E0;
+    transition-duration: 0.4s;
+}
+
+.the-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
