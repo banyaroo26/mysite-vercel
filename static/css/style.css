@@ -28,6 +28,10 @@ body {
 
 .education {
     background-color: rgba(52, 58, 64, 0.05);
+    /*
+    border-style: dashed;
+    border-color: #343a40;
+    */
     border-radius: 10px;
     font-size: 20px;
 }
