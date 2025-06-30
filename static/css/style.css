@@ -36,6 +36,25 @@ body {
     font-size: 20px;
 }
 
+.hide {
+    opacity: 0;
+    transform: translateY(30px);
+    /* transition: opacity 0.5s ease-in, transform 0.5s ease-in; */
+}
+
+.element:not(.hide) {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+/*
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}*/
+
 .education > img {
     width: 100px;
     height: auto;
