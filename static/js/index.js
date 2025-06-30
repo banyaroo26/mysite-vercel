@@ -16,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const field = document.getElementById('field')
     const profile = document.getElementById('profile')
 
-    const links = [ email, github, kaggle, linkedin, name, field, profile ]
+    const links = [ email, github, kaggle, linkedin ]
+
+    field.classList.add('show2')
 
     links.forEach((link) => {
 
