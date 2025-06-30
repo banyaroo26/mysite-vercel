@@ -5,6 +5,27 @@ const technologies = document.getElementById('technologies')
 
 const items = [ familiar, education, activities, technologies ]
 
+document.addEventListener('DOMContentLoaded', () => {
+
+    const email = document.getElementById('email')
+    const github = document.getElementById('github')
+    const kaggle = document.getElementById('kaggle')
+    const linkedin = document.getElementById('linkedin')
+
+    const name = document.getElementById('name')
+    const field = document.getElementById('field')
+    const profile = document.getElementById('profile')
+
+    const links = [ email, github, kaggle, linkedin, name, field, profile ]
+
+    links.forEach((link) => {
+
+        link.classList.add('show')
+        
+    })
+
+})
+
 window.addEventListener('scroll', () => {
 
     const threshold = window.innerHeight * (75/100)

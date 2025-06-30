@@ -36,6 +36,36 @@ body {
     font-size: 20px;
 }
 
+.links {
+    opacity: 0;
+}
+
+.links.show {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    transition-delay: 0.5s;
+}
+
+/*
+.links {
+    transition: opacity 1s ease-in;
+    transition-delay: 0.5s;
+}
+
+.links-hide {
+    opacity: 0;
+}
+
+.links-show {
+    opacity: 1;
+}
+*/
+
+.element {
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+
 .hide {
     opacity: 0;
     transform: translateY(30px);
@@ -45,7 +75,6 @@ body {
 .element:not(.hide) {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
 }
 
 /*

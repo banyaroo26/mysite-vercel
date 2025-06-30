@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade In Links</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <style>
+    .links {
+      transition: opacity 1s ease-in;
+      transition-delay: 0.5s;
+    }
+
+    .links-hide {
+      opacity: 0;
+    }
+
+    .links-show {
+      opacity: 1;
+    }
+
+    body {
+      background-color: #111;
+      padding: 40px;
+    }
+
+    .nav-link {
+      display: block;
+      margin: 10px 0;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="nav-link text-light links links-hide" href="https://github.com/banyaroo26" id="github"><i class="fab fa-github text-dark"></i></a>
+  <a class="nav-link text-light links links-hide" href="https://www.kaggle.com/banyaroo26" id="kaggle"><i class="fab fa-kaggle text-dark"></i></a>
+  <a class="nav-link text-light links links-hide" href="mailto:oobanyar127@gmail.com" id="email"><i class="fa fa-envelope text-dark"></i></a>
+  <a class="nav-link text-light links links-hide" href="https://www.linkedin.com/in/banyaroo/" id="linkedin"><i class="fab fa-linkedin text-dark"></i></a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const email = document.getElementById('email');
+      const linkedin = document.getElementById('linkedin');
+      const kaggle = document.getElementById('kaggle');
+      const github = document.getElementById('github');
+
+      setTimeout(() => {
+        [email, linkedin, kaggle, github].forEach(link => {
+          link.classList.remove('links-hide');
+          link.classList.add('links-show');
+        });
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
